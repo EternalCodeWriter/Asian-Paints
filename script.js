@@ -209,7 +209,7 @@ gsap.from(".page-p .video-div",{
     scrollTrigger:{
         trigger:".page-p",
         scroller: "body",
-        markers: true, 
+        markers: false, 
         start: "top 40%",
         end: "top 25%",
         scrub:2

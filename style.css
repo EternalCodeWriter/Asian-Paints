@@ -246,11 +246,12 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #222;
 }
 .video-div{
     height: 100%;
     width: 100%;
-    
+
     video{
         height: 100%;
         width: 100%;
@@ -261,7 +262,13 @@ canvas {
 }
 
 /* video section end */
-
+.about-asianpaint{
+    height: 40vh;
+    background-color: #656464;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+}
 /* Footer start */
 .footer{
     height: 90vh;
