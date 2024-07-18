@@ -269,9 +269,13 @@ canvas {
     padding: 2rem;
     color: #fff;
 }
+.about-asianpaint p{
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
 /* Footer start */
 .footer{
-    height: 90vh;
+    height:90vh;
     background-color: #222;
     padding: 1.5rem;
 }
@@ -467,4 +471,143 @@ padding: 1.2rem;
     color: #fff;
     text-align: center;
     margin-top: 2rem;
+}
+hr{
+    display: inline-block;
+}
+@media (max-width: 768px) {
+    /* Adjustments for Top Footer */
+    .top-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-footer .box {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 10px;
+    }
+    #country-list{
+        margin-top: 1rem;
+        padding: .5rem 0;
+    }
+    .top-2 p{
+        font-size: 1.2rem;
+    }
+
+    .top-3 input,
+    .top-4 input {
+        width: calc(100% - 20px); 
+
+    }
+    .top-3 button,
+    .top-4 button {
+        width: 94%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    /* Adjustments for Main Footer */
+    .footer{
+        height: 230vh;
+    }
+    .main-footer{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer .fbox {
+        width: 50%;
+        padding: 1rem ;
+        text-align: center;
+    }
+
+    .main-footer .fbox li{
+        text-align: center;
+    }
+    .fbox-1{
+        margin-top: 57vh;
+    }
+    .fbox-5 .app-img .img1,
+    .fbox-5 .app-img .img2 {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .media-links {
+        justify-content: center;
+    }
+    .copyright-box {
+        margin-top: 155vh; /* Pushes the copyright box to the bottom */
+    }
+
+    hr{
+        display: none;
+    }
+}
+/* Media Queries for Main Footer */
+@media (max-width: 1200px) {
+    .main-footer .fbox {
+        width: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-footer .fbox {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-footer .fbox {
+        width: 50%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-footer .fbox {
+        width: 100%;
+    }
+}
+
+/* Media Queries for .about-asianpaint Section */
+@media (max-width: 1024px) {
+    .about-asianpaint h4 {
+        font-size: 1.5rem; /* Adjust heading size for tablets and smaller screens */
+    }
+
+    .about-asianpaint p {
+        font-size: 1rem; /* Adjust paragraph text size for better readability */
+        line-height: 1.5;
+        padding: 0 1rem; /* Add some padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-asianpaint {
+        text-align: center;
+        padding: 1rem; /* Add some padding for mobile screens */
+    }
+
+    .about-asianpaint h4 {
+        font-size: 1.25rem; /* Adjust heading size for mobile screens */
+    }
+
+    .about-asianpaint p {
+        font-size: 0.9rem; /* Adjust paragraph text size for smaller screens */
+        line-height: 1.4;
+        padding: 0; /* Remove extra padding for mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-asianpaint h4 {
+        font-size: 1rem; /* Further reduce heading size for very small screens */
+    }
+
+    .about-asianpaint p {
+        font-size: 0.8rem; /* Further reduce paragraph text size for very small screens */
+        line-height: 1.3;
+    }
 }
