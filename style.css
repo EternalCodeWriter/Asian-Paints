@@ -241,17 +241,16 @@ canvas {
     margin-left: 1rem;
 }
 /* video section start */
-/* .page-p{
-    background: linear-gradient(to bottom , rgb(243, 180, 121) , rgb(117, 117, 240));
+.page-p{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .video-div{
-    height: 33rem;
-    width: 70rem;
-
+    height: 100%;
+    width: 100%;
+    
     video{
         height: 100%;
         width: 100%;
@@ -259,31 +258,6 @@ canvas {
         border-radius: 1rem;
     }
     
-} */
-body {
-    height: 2000px; /* Ensure enough scrollable height */
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    font-family: Arial, sans-serif;
-}
-.page-p {
-    height: 100vh; /* Full viewport height for scrolling */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
-.video-div {
-    width: 80%; /* Adjust video width as needed */
-    margin: auto;
-}
-.video-div video {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease;
 }
 
 /* video section end */

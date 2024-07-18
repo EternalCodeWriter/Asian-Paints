@@ -202,51 +202,21 @@ tl.from(".appointment button",{
 })
 
 // Video controls
- 
-// gsap.from(".page-p .video-div",{
-//     scale:0,
-//     opacity:0,
-//     delay:1,
-//     y:100,
-//     scrollTrigger:{
-//         trigger:".page-p",
-//         scroller: "body",
-//         markers: true, 
-//         start: "top 30%",
-//         end: "top 70%",
-//         scrub:2,
-//         pin:true
-//     }
-   
-// })
-
 gsap.registerPlugin(ScrollTrigger);
+ 
+gsap.from(".page-p .video-div",{
+    scale:0.8,
+    scrollTrigger:{
+        trigger:".page-p",
+        scroller: "body",
+        markers: true, 
+        start: "top 40%",
+        end: "top 25%",
+        scrub:2
+        }
+})
 
-gsap.from(".page-p .video-div", {
-    scale: 0,
-    opacity: 0,
-    delay: 1,
-    y: 100,
-    scrollTrigger: {
-        trigger: ".page-p",
-        scroller: "body", 
-        start: "top 40%", 
-        end: "top 60%", 
-        scrub: 2, 
-        pin: true,
-        markers: false 
-    }
-});
-gsap.to(".video-div", {
-    opacity: 1,
-    scale: 1,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".video-div",
-        start: "top 45%", 
-        end: "bottom 25%", 
-        scrub: 2, 
-        markers:false
-    }
-});
+
+
+
 
